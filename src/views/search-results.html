@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado da Pesquisa</title>
-    <link rel="shortcut icon" href="/assets/rocket.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    {%set pageId = "page-search-results" %}
 
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/search-results.css">
-    <link rel="stylesheet" href="/styles/respovive.css">
-</head>
-
-<body>
-
-    <div id="page-search-results">
-        <header>
-            <img src="./assets/logo.svg" alt="Logo Marca">
-            <a href="./index.html">
-                <span></span>
-                Voltar para Home
-            </a>
-        </header>
+    {%block title %}
+       <title>Resultado da Pesquisa</title>
+    {%endblock title %}
+    
+    {%block styles %}
+        <link rel="stylesheet" href="/styles/search-results.css">
+    {%endblock styles %}
+    
+    {%block content %}
+        {%include "partials/page-header.html" %}
         
         <main>
             <h4>
@@ -53,7 +42,4 @@
                 </div>
             </div>
         </main>
-    </div>
-</body>
-
-</html>
+    {%endblock content %}

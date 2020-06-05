@@ -24,6 +24,22 @@
     #page-search-results main .cards{
         grid-template-columns: 1fr;
     }
+
+    #page-create-point .field-group{
+
+        flex-direction: column;
+    }
+}
+
+@media(max-width:910px){
+    #page-create-point .items-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-create-point .items-grid li{
+        margin-top: 30px;
+    }
 }
 
 @media(min-width:1700px){
