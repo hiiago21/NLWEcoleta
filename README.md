@@ -3,7 +3,7 @@
     </h1>
   
   <p align="center">
-  <img width="250" src="assets/logoGit.svg">
+  <img width="250" src="public/assets/logoGit.svg">
 </p>
 
 <h4>Este projeto é referente a semanada Next Level Week!</h4>
